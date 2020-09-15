@@ -1,1 +1,12 @@
 <h1>New Party</h1>
+
+<%= form_for @party do |f| %>
+    <%= f.label "Name" %>
+    <%= f.text_field "name" %>
+    <%= f.label "Date" %>
+    <%= f.date_field "date" %>
+    <%= f.label "Budget" %>
+    <%= f.number_field "budget" %>
+
+    <%= f.submit "Make a Party" %>
+<% end %>
